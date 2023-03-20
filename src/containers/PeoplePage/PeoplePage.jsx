@@ -13,9 +13,9 @@ const PeoplePage = () => {
 			const id = getPeopleId(url);
 			const img = getPeopleImg(id);
 			return {
-				id: id,
-				name: name,
-				img: img,
+				id,
+				name,
+				img,
 			};
 		});
 		setPeople(peopleList);
