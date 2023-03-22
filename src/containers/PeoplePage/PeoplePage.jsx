@@ -32,10 +32,10 @@ const PeoplePage = () => {
 		getResource(API_PEOPLE);
 	}, []);
 	return <>
-	{ errorApi ? <h2>ERROR</h2> 
-	:
-	<PeopleList people={people} /> }
-	</>;
+	{
+		people && <PeopleList people={people} />
+		}
+		</>;
 };
 
 export default PeoplePage;
