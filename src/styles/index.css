@@ -1,0 +1,11 @@
+
+
+:root {
+	--color-primary-dark: var(#10100e);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #10100e;
+}
