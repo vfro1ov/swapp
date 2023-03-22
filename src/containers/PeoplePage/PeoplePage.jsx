@@ -12,13 +12,14 @@ const PeoplePage = () => {
 	const getResource = async (url) => {
 		const res = await getApiResource(url);
 		if (res) {
-			const peopleList = res.results.map(({ name, url }) => {
+			const peopleList = res.results.map(({ name, url, gender }) => {
 				const id = getPeopleId(url);
 				const img = getPeopleImg(id);
 				return {
 					id,
 					name,
 					img,
+					gender
 				};
 			});
 			setPeople(peopleList);
@@ -31,11 +32,11 @@ const PeoplePage = () => {
 	useEffect(() => {
 		getResource(API_PEOPLE);
 	}, []);
-	return <>
-	{
-		people && <PeopleList people={people} />
-		}
-		</>;
+	return (
+		<>
+			<div className="people_wrapper">{people && <PeopleList people={people} />}</div>
+		</>
+	);
 };
 
 export default PeoplePage;

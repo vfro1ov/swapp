@@ -1,0 +1,8 @@
+.people_wrapper {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	background-color: #10100e;
+}
