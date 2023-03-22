@@ -1,4 +1,4 @@
-import { SWAPI_BASE,SWAPI_SPECIES, HTTPS,GUIDE_IMG_EXTENTION,GUIDE__IMG_SPECIES} from "../constants/api"
+import { SWAPI_BASE,SWAPI_SPECIES, HTTPS,GUIDE_IMG_EXTENTION,GUIDE__IMG_SPECIES} from "@constants/api"
 
 const getId = (url,category) => {
 const id = url

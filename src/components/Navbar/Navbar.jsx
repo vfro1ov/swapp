@@ -1,4 +1,3 @@
-
 import { NavLink } from 'react-router-dom';
 
 import './Navbar.css';
@@ -24,7 +23,7 @@ const Navbar = () => {
 					<div className="collapse navbar-collapse" id="navbarNav">
 						<ul className="navbar-nav">
 							<li className="nav-item">
-								<NavLink className="nav-link " aria-current="page" to='/people'>
+								<NavLink className="nav-link " aria-current="page" to="/people">
 									People
 								</NavLink>
 							</li>

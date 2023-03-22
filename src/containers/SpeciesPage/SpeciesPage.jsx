@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import { API_SPECIES } from '../../constants/api';
-import { getApiResource } from '../../utils/network';
-import { getSpeciesId, getSpeciesImg } from '../../services/getSpeciesData';
-import SpeciesList from '../../components/SpeciesPage/SpeciesList'
+import { API_SPECIES } from '@constants/api';
+import { getApiResource } from '@utils/network';
+import { getSpeciesId, getSpeciesImg } from '@services/getSpeciesData';
+import SpeciesList from '@components/SpeciesPage/SpeciesList'
 
 import './SpeciesPage.css';
 

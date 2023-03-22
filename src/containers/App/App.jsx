@@ -1,7 +1,6 @@
-import {  Route, Routes, BrowserRouter } from 'react-router-dom';
-import PeoplePage from '../PeoplePage';
-import SpeciesPage from '../SpeciesPage';
-import Navbar from '../../components/Navbar';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { routerConfig } from '@routes/routerConfig';
+import Navbar from '@components/Navbar';
 import './App.css';
 
 function App() {
@@ -10,8 +9,9 @@ function App() {
 			<BrowserRouter>
 				<Navbar />
 				<Routes>
-					<Route path="/people" element={<PeoplePage />} />
-					<Route path="/species" element={<SpeciesPage />} />
+					{routerConfig.map((route, index) => (
+						<Route key={index} path={route.path} element={route.element} />
+					))}
 				</Routes>
 			</BrowserRouter>
 		</>
