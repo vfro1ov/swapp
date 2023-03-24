@@ -1,7 +1,6 @@
 .card {
-	width: 530px;
-	margin-left: 50px;
+	margin: auto;
+	width: 400px;
 	margin-top: 30px;
 	cursor: pointer;
-	align-items: center;
 }

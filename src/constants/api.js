@@ -5,8 +5,13 @@ export const HTTP = 'http://';
 export const SWAPI_BASE = 'swapi.dev/api/';
 export const SWAPI_PEOPLE = 'people';
 export const SWAPI_SPECIES = 'species';
+export const SWAPI_PARAM_SEARCH = '/?search=';
+export const SWAPI_PARAM_PAGE = '/?page=';
+
 export const API_PEOPLE = HTTPS+SWAPI_BASE+SWAPI_PEOPLE
 export const API_SPECIES = HTTPS+SWAPI_BASE+SWAPI_SPECIES
+export const API_SEARCH = HTTPS+SWAPI_BASE+SWAPI_PEOPLE+SWAPI_PARAM_SEARCH
+
 
 
 const GUIDE_BASE_IMG = 'https://starwars-visualguide.com/assets/img/';

@@ -12,7 +12,7 @@ const PeopleList = ({ people }) => {
 						<div className="col-md-8">
 							<div className="card-body">
 								<h5 className="card-title">{name}</h5>
-								<p class="card-text">{gender}</p>
+								<p className="card-text">{gender}</p>
 							
 							</div>
 							<a href={id} className="btn btn-primary">

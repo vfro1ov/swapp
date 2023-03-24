@@ -6,8 +6,9 @@ import PeopleList from '@components/PeoplePage/PeopleList';
 import './PeoplePage.css';
 
 const PeoplePage = () => {
-	const [people, setPeople] = useState(null);
-	const [errorApi, seterrorApi] = useState(false);
+	const [people, setPeople] = useState([]);
+	const [errorApi, setErrorApi] = useState(false);
+
 
 	const getResource = async (url) => {
 		const res = await getApiResource(url);
@@ -19,22 +20,25 @@ const PeoplePage = () => {
 					id,
 					name,
 					img,
-					gender
+					gender,
 				};
 			});
 			setPeople(peopleList);
-			seterrorApi(false);
+			setErrorApi(false);
 		} else {
-			seterrorApi(true);
+			setErrorApi(true);
 		}
 	};
 
 	useEffect(() => {
 		getResource(API_PEOPLE);
 	}, []);
+
 	return (
 		<>
-			<div className="people_wrapper">{people && <PeopleList people={people} />}</div>
+			<div className="people_wrapper">
+				{people && <PeopleList people={people} />}
+			</div>
 		</>
 	);
 };

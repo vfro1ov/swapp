@@ -13,7 +13,4 @@ export const getApiResource = async (url) => {
 	}
 };
 
-// (async () => {
-// 	const data = await getApiResponse(API_BASE + API_PEOPLE);
-// 	console.log(data);
-// })();
+
