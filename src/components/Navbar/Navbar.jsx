@@ -8,7 +8,8 @@ const Navbar = () => {
 			<nav className="navbar navbar-expand-lg bg-body-tertiary">
 				<div className="container-fluid">
 					<NavLink className="navbar-brand" to="/">
-						StarWars
+						STARWARS FUN
+					<img src="https://cdn-icons-png.flaticon.com/512/86/86572.png" alt="logo" />
 					</NavLink>
 					<button
 						className="navbar-toggler"
@@ -21,14 +22,13 @@ const Navbar = () => {
 						<span className="navbar-toggler-icon"></span>
 					</button>
 					<div className="collapse navbar-collapse" id="navbarNav">
-					<button type='button' className='btn btn-primary'>ww</button>
 						<ul className="navbar-nav">
-							<li className="nav-item">
+							<li className="nav-item" 	type="button">
 								<NavLink className="nav-link " aria-current="page" to="/people/?page=1">
 									People
 								</NavLink>
 							</li>
-							<li className="nav-item">
+							<li className="nav-item active" type="button">
 								<NavLink className="nav-link" to="/species">
 									Species
 								</NavLink>

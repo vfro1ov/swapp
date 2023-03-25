@@ -14,7 +14,7 @@ const Pagination = ({ counterPage, prev, next, getResource,queryPage }) => {
 					</Link>
 				</li>
 			
-				<li className="page-item" onClick={handleChangeNext}>
+				<li className="page-item" onClick={handleChangeNext} disabled={!next}>
 					<Link className="page-link" to={`?page=${counterPage + 1}`}>
 						Next
 					</Link>

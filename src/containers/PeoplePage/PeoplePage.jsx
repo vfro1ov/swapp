@@ -52,7 +52,7 @@ const PeoplePage = () => {
 
 	useEffect(() => {
 		getResource(API_PEOPLE + queryPage);
-	}, []);
+	}, [queryPage]);
 
 	return (
 		<>
