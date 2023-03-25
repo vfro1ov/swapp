@@ -1,10 +1,23 @@
+import { useLocation } from 'react-router';
+import img from './img/404nfp.png';
 import './NotFoundPage.css';
 
 const NotFoundPage = () => {
+	let location = useLocation();
+
 	return (
-		<div className="notfound_container">	<h1>NOT FOUND 404</h1>
-		<img src="https://i.pinimg.com/564x/f8/5d/0d/f85d0ddc4cfd000add7b43f2172f245f.jpg" alt="404" /></div>
+		<div className="nf_container">
+			<div className="nf_h1">
+				<h1>NOT FOUND 404</h1>
+			</div>
+			<div className="nf_img">
+				<img src={img} alt="404" />
+			</div>
+			<div className="nf_text">
+				<p>No match for {location.pathname}</p>
+			</div>
+		</div>
 	);
-}
+};
 
 export default NotFoundPage;

@@ -1,11 +1,21 @@
-.notfound_container {
-	margin: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #10100e
+.nf_container {
+	background-color: #101010;
 }
-.notfound_container img {
-	width: 400px;
-	justify-content: center;
+.nf_img{
+width: 250px;
+margin:0 auto;
+}
+.nf_h1{
+	width: 350px;
+	margin: 0 auto;
+}
+.nf_text{
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 140px;
+	color: #fff;
+	font-style: 16px;
 	align-items: center;
+	justify-content: center;
+
 }

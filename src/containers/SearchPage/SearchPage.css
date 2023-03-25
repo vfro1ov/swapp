@@ -1,11 +1,19 @@
 .search_results {
-	width: 700px;
-	display: grid;
-	grid-template-columns: repeat(2, 5fr);
-	margin: auto;
-	
+	margin: 0 auto;
+	padding: 0;	
+	width: 100%;
 }
 .input-group{
 	width: 500px;
 	margin: auto;
+}
+.search_people_card {
+		margin: auto;
+		margin-left: 30px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+}
+.search_res {
+	margin: 0 auto;
+	width: 200px;
 }

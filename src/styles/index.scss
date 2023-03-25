@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'bootstrap';
+
+:root {
+	--color-primary-black: var(#10100e);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: $color-primary-black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.btn{
+	color: #fff;
+}

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './PeopleList.css';
 
 const PeopleList = ({ people }) => {
@@ -15,9 +16,9 @@ const PeopleList = ({ people }) => {
 								<p className="card-text">{gender}</p>
 							
 							</div>
-							<a href={id} className="btn btn-primary">
+							<Link to={`/people/${id}`} className="btn btn-primary">
 							Go somewhere
-						</a>
+						</Link>
 						</div>
 					</div>
 					

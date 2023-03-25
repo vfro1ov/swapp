@@ -21,9 +21,10 @@ const Navbar = () => {
 						<span className="navbar-toggler-icon"></span>
 					</button>
 					<div className="collapse navbar-collapse" id="navbarNav">
+					<button type='button' className='btn btn-primary'>ww</button>
 						<ul className="navbar-nav">
 							<li className="nav-item">
-								<NavLink className="nav-link " aria-current="page" to="/people">
+								<NavLink className="nav-link " aria-current="page" to="/people/?page=1">
 									People
 								</NavLink>
 							</li>
