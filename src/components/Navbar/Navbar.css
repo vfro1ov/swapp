@@ -1,4 +1,14 @@
-
-.navbar-brand img{
-width: 36px;
+.navbar-brand {
+	width: 144px;
+	display: grid;
+	grid-template-columns: 150px 35px;
+}
+.navbar-collapse{
+	margin-left: 35px;
+}
+.logo {
+	width: 40px;
+}
+.logo img{
+	width: 36px;
 }

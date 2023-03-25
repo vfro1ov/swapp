@@ -1,4 +1,18 @@
+.person {
+	width: 600px;
+	
+}
 .person_info{
-	width: 200px;
 	border: 1px solid black;
+	width: 300px;
+}
+.person_img img{
+	width: 170px;
+	margin: 20px;
+	border: 1px solid black;
+	box-shadow: 25%;
+}
+.person_name{
+	margin-left: 100px;
+	margin-top: 20px;
 }

@@ -36,7 +36,7 @@ const SearchPage = () => {
 		<>
 			<div className="input-group input-group-lg">
 				<input
-					className="search_input form-control"
+					className="search_input form-control search"
 					type="text"
 					onChange={onChangePeople}
 					value={search}

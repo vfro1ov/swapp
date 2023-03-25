@@ -19,9 +19,8 @@ const PersonPage = () => {
 				{ title: 'Name', data: res.name },
 				{ title: 'Gender', data: res.gender },
 				{ title: 'Hair color', data: res.hair_color },
-				{ title: 'Skin_color', data: res.skin_color },
-				{ title: 'eye_color', data: res.eye_color },
-				{ title: 'species', data: res.species },
+				{ title: 'Skin color', data: res.skin_color },
+				{ title: 'Eye color', data: res.eye_color },
 			]);
 			setPersonName(res.name);
 			setPersonImg(getPeopleImg(id));
@@ -29,21 +28,30 @@ const PersonPage = () => {
 	}, [id]);
 	return (
 		<>
-			<h1>{personName}</h1>
-			<img src={personImg} alt="img" />
-
-			{personInfo && (
-				<ul>
-					{personInfo.map(
-						({ title, data }) =>
-							data && (
-								<li className="list-group-item">
-									{title}: {data}
-								</li>
-							),
-					)}
-				</ul>
-			)}
+			<div className="card mb-3 person">
+				<div className="row g-0">
+				<h5 className="card-title person_name">{personName}</h5>
+					<div className="col-md-4 person_img">
+						<img src={personImg} alt="img" />
+					</div>
+					<div className="col-md-8">
+						<div className="card-body person_info">
+							{personInfo && (
+								<ul>
+									{personInfo.map(
+										({ title, data }) =>
+											data && (
+												<li className="list-group-item">
+													{title}: {data}
+												</li>
+											),
+									)}
+								</ul>
+							)}
+						</div>
+					</div>
+				</div>
+			</div>
 		</>
 	);
 };

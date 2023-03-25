@@ -9,7 +9,9 @@ const Navbar = () => {
 				<div className="container-fluid">
 					<NavLink className="navbar-brand" to="/">
 						STARWARS FUN
+						<div className='logo'>
 					<img src="https://cdn-icons-png.flaticon.com/512/86/86572.png" alt="logo" />
+					</div>
 					</NavLink>
 					<button
 						className="navbar-toggler"
@@ -29,7 +31,7 @@ const Navbar = () => {
 								</NavLink>
 							</li>
 							<li className="nav-item active" type="button">
-								<NavLink className="nav-link" to="/species">
+								<NavLink className="nav-link" to="/species/?page=1">
 									Species
 								</NavLink>
 							</li>
