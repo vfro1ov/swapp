@@ -6,10 +6,12 @@ import { getSpeciesId, getSpeciesImg } from '@services/getSpeciesData';
 import { getPageId } from '@services/getPageId';
 import SpeciesList from '@components/SpeciesPage/SpeciesList';
 import Pagination from '@components/Pagination';
+import { withErrorApi } from '@hoc-helpers/withErrorApi';
+
 
 import './SpeciesPage.css';
 
-const SpeciesPage = () => {
+const SpeciesPage = ({setErrorApi}) => {
 	const [species, setSpecies] = useState();
 	const [counterPage, setCounterPage] = useState(1);
 	const [prev, setPrev] = useState(null);
@@ -20,6 +22,7 @@ const SpeciesPage = () => {
 
 	const getResource = async (url) => {
 		const res = await getApiResource(url);
+		if (res) {
 		const speciesList = res.results.map(({ name, url, language }) => {
 			const id = getSpeciesId(url);
 			const img = getSpeciesImg(id);
@@ -34,18 +37,20 @@ const SpeciesPage = () => {
 		setSpecies(speciesList);
 		setPrev(res.previous);
 		setNext(res.next);
-	};
-
+		setErrorApi(false)
+	} else {
+		setErrorApi(true)
+	}
+	}
 	useEffect(() => {
 		getResource(API_SPECIES + queryPage);
 	}, [queryPage]);
 
 	return (
 		<>
-			<div className="species__container">{species && <SpeciesList species={species} />}</div>
 			<Pagination getResource={getResource} counterPage={counterPage} prev={prev} next={next} />
+			<div className="species__container">{species && <SpeciesList species={species} />}</div>
 		</>
 	);
 };
-
-export default SpeciesPage;
+export default withErrorApi(SpeciesPage);

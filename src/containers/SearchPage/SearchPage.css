@@ -12,9 +12,7 @@
 }
 .search_people_card {
 		margin: auto;
-		margin-left: 30px;
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		margin-left: 70px;
 }
 .search_res {
 	margin: 0 auto;

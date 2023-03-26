@@ -1,5 +1,5 @@
 .nf_container {
-	background-color: #101010;
+	margin-top: 150px;
 }
 .nf_img{
 width: 250px;
@@ -12,7 +12,7 @@ margin:0 auto;
 .nf_text{
 	margin: 0 auto;
 	margin-top: 20px;
-	width: 140px;
+	width: 170px;
 	color: #fff;
 	font-style: 16px;
 	align-items: center;

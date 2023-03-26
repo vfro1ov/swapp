@@ -9,7 +9,7 @@ const SpeciesList = ({species}) => {
 					<div className="card-body">
 						<h5 className="card-title">{name}</h5>
 						<p className="card-text">{language}</p>
-						<a href="/" className="btn btn-primary">
+						<a href="/" className="btn btn-primary card-btn">
 							Go somewhere
 						</a>
 					</div>
