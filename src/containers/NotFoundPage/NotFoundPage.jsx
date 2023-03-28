@@ -10,7 +10,7 @@ const NotFoundPage = () => {
 
 	return (
 		<>
-		<LinkBack />
+		
 
 		<div className="nf_container">
 			<div className="nf_h1">
@@ -21,7 +21,9 @@ const NotFoundPage = () => {
 			</div>
 			<div className="nf_text">
 				<p>No match for {location.pathname}</p>
+				<div className='nf_btn'><LinkBack /></div>
 			</div>
+
 		</div>
 		</>
 	);

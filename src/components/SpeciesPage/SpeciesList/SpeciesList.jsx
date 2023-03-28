@@ -1,6 +1,7 @@
-import './SpeciesList.css';
+import './SpeciesList.scss';
 
-const SpeciesList = ({species}) => {
+
+const SpeciesList = ({ species }) => {
 	return (
 		<div className="cards">
 			{species.map(({ id, name, img, language }) => (
@@ -9,10 +10,19 @@ const SpeciesList = ({species}) => {
 					<div className="card-body">
 						<h5 className="card-title">{name}</h5>
 						<p className="card-text">{language}</p>
-						<a href="/" className="btn btn-primary card-btn">
-							Go somewhere
-						</a>
-					</div>
+						<div className="button">
+							<div className="button__text">Learn more...</div>
+						<a href="/">
+							<div className="button__wrapper">
+								<div className="button__arrow"></div>
+								<div className="button__border-circle"></div>
+								<div className="button__mask-circle">
+									<div className="button__small-circle"></div>
+								</div>
+							</div>
+							</a> 
+						</div>
+						</div>
 				</div>
 			))}
 		</div>
