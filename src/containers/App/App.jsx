@@ -1,6 +1,7 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { routerConfig } from '@routes/routerConfig';
 import Navbar from '@components/Navbar';
+
 import './App.css';
 
 function App() {

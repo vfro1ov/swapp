@@ -5,6 +5,7 @@ import { getPeopleId, getPeopleImg } from '@services/getPeopleData';
 import { getPageId } from '@services/getPageId';
 import { useQueryParams } from '@hooks/useQueryParams';
 import PeopleList from '@components/PeoplePage/PeopleList';
+// import { LinkBack } from '@components/LinkBack';
 import Pagination from '@components/Pagination';
 import { withErrorApi } from '@hoc-helpers/withErrorApi';
 
@@ -55,6 +56,7 @@ const PeoplePage = ({ setErrorApi }) => {
 
 	return (
 		<>
+		{/* <LinkBack /> */}
 			<Pagination getResource={getResource} counterPage={counterPage} prev={prev} next={next} />
 				{/* <div className="input-group input-group-lg">
 					<input

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
 import { getApiResource } from '@utils/network';
 import { getPeopleImg } from '@services/getPeopleData';
+import LinkBack from '@components/LinkBack/LinkBack';
 import { API_PERSON } from '@constants/api';
 
 import './PersonPage.css';
@@ -28,9 +29,10 @@ const PersonPage = () => {
 	}, [id]);
 	return (
 		<>
+			<LinkBack />
 			<div className="card mb-3 person">
 				<div className="row g-0">
-				<h5 className="card-title person_name">{personName}</h5>
+					<h5 className="card-title person_name">{personName}</h5>
 					<div className="col-md-4 person_img">
 						<img src={personImg} alt="img" />
 					</div>
