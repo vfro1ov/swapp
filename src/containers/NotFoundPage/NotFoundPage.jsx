@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router';
 import LinkBack from '@components/LinkBack/LinkBack';
 
-import img from './img/404nfp.png';
+import img from './img/404obi.png';
 import './NotFoundPage.css';
 
 
