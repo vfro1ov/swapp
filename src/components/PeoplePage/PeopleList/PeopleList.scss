@@ -1,0 +1,111 @@
+$bg-color: #463c2a;
+$link-text-color: #1a1818;
+$button-bg-1: #541388;
+$button-bg-2: #D90368;
+$button-bg-3: #104547;
+$button-bg-4: #4F000B;
+$button-bg-5: #F28123;
+$border-radius: 6px;
+$overlay-color: #df3d3d;
+
+.card :hover {
+	cursor: pointer;
+}
+.cards {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	margin-left: 70px;
+}
+.card_item {
+	margin-top: 30px;
+	width: 280px;
+	margin-bottom: 10px;
+	img {
+		width: 170px;
+		margin: auto;
+		margin-top: 20px;
+	}
+}
+
+.card_item :hover {
+} 
+
+.card-title {
+	margin: auto;
+	margin-left: 37px;
+}
+.card-text {
+	margin: auto;
+	margin-left: 37px;
+}
+.card-btn {
+	margin: auto;
+	margin-top: 15px;
+	margin-left: 37px;
+}
+
+.effect {
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	text-transform: capitalize;
+	/* background-color: - add your own background-color */
+	font: {
+		family: 'Roboto', sans-serif; /* put your font-family */
+		size: 18px;
+	}
+	padding: 20px 0;
+	width: 130px;
+	border-radius: $border-radius;
+}
+
+
+.effect.effect-5 {
+	transition: all 0.2s linear 0s;
+
+	&:before {
+		content: '\26A1';
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 30px;
+		background-color: rgba($overlay-color, 0.3);
+		border-radius: 0 50% 50% 0;
+		transform: scale(0, 1);
+		transform-origin: left center;
+		transition: all 0.2s linear 0s;
+	}
+
+	&:hover {
+		text-indent: 30px;
+
+		&:before {
+			transform: scale(1, 1);
+			text-indent: 0;
+		}
+	}
+}
+.button-effect {
+	padding: 30px 0; 
+	margin-left: 40px;
+	
+	h2 {
+		font: {
+			family: 'Droid Serif', serif;
+			size: 20px;
+		}
+		margin-bottom: 40px;
+	}
+	
+	a {
+		margin-right: 17px;
+		
+		&:nth-child(1) {
+			background-color: $button-bg-1;
+		}
+	}}

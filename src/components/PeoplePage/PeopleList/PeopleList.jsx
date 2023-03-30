@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './PeopleList.css';
+import './PeopleList.scss';
 
 const PeopleList = ({ people }) => {
 	return (
@@ -10,9 +10,10 @@ const PeopleList = ({ people }) => {
 							<div className="card-body">
 								<h5 className="card-title">{name}</h5>
 								<p className="card-text">{gender}</p>
-							<Link to={`/people/${id}`} className="btn btn-primary card-btn">
-							Go somewhere
+							<div className='button-effect'><Link to={`/people/${id}`} className="effect effect-5">
+							About
 						</Link>
+						</div>
 						</div>
 					</div>
 					

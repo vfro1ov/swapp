@@ -1,0 +1,25 @@
+$button-bg-1: #541388;
+
+.pagination_wrapper{
+	width: 100px;
+	margin:auto;
+}
+.button-effect {
+	padding: 30px 0; 
+	margin-left: 40px;
+	
+	h2 {
+		font: {
+			family: 'Droid Serif', serif;
+			size: 20px;
+		}
+		margin-bottom: 40px;
+	}
+	
+	a {
+		margin-right: 17px;
+		
+		&:nth-child(1) {
+			background-color: $button-bg-1;
+		}
+	}}
