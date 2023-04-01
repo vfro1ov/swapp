@@ -3,14 +3,17 @@ import { useParams } from 'react-router';
 import { getApiResource } from '@utils/network';
 import { getPeopleImg } from '@services/getPeopleData';
 import LinkBack from '@components/LinkBack/LinkBack';
+import PersonInfo from '@components/PersonPage/PersonInfo';
 import { API_PERSON } from '@constants/api';
 
 import './PersonPage.css';
+import PersonFilms from '../../components/PersonPage/PersonFilms';
 
 const PersonPage = () => {
 	const [personInfo, setPersonInfo] = useState();
 	const [personName, setPersonName] = useState();
 	const [personImg, setPersonImg] = useState();
+	const [personFilm, setPersonFilm] = useState();
 	const { id } = useParams();
 
 	useEffect(() => {
@@ -23,8 +26,8 @@ const PersonPage = () => {
 				{ title: 'Skin color', data: res.skin_color },
 				{ title: 'Eye color', data: res.eye_color },
 			]);
-			setPersonName(res.name);
 			setPersonImg(getPeopleImg(id));
+			res.films.length && setPersonFilm(res.films)
 		})();
 	}, [id]);
 	return (
@@ -40,18 +43,19 @@ const PersonPage = () => {
 						<div className="card-body person_info">
 							{personInfo && (
 								<ul>
-									{personInfo.map(
-										({ title, data }) =>
-											data && (
-												<li className="list-group-item">
-													{title}: {data}
-												</li>
-											),
-									)}
+									<PersonInfo personInfo={personInfo} />
 								</ul>
 							)}
 						</div>
+						
 					</div>
+					<div className="card-body person_info">
+							{personFilm && (
+								<ul>
+									<PersonFilms personFilm={personFilm} />
+								</ul>
+							)}
+						</div>
 				</div>
 			</div>
 		</>
