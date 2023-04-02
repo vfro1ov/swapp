@@ -7,7 +7,7 @@ import PersonInfo from '@components/PersonPage/PersonInfo';
 import { API_PERSON } from '@constants/api';
 
 import './PersonPage.css';
-import PersonFilms from '../../components/PersonPage/PersonFilms';
+import PersonFilms from '@components/PersonPage/PersonFilms';
 
 const PersonPage = () => {
 	const [personInfo, setPersonInfo] = useState();
@@ -27,6 +27,7 @@ const PersonPage = () => {
 				{ title: 'Eye color', data: res.eye_color },
 			]);
 			setPersonImg(getPeopleImg(id));
+			setPersonName(res.name)
 			res.films.length && setPersonFilm(res.films)
 		})();
 	}, [id]);
