@@ -8,6 +8,7 @@ import './FilmPage.css';
 
 const FilmPage = () => {
 	const [film, setFilm] = useState();
+	
 	const getResource = async (url) => {
 		const res = await getApiResource(url);
 		if (res) {
