@@ -31,7 +31,7 @@ const PeoplePage = ({ setErrorApi }) => {
 					img,
 					gender,
 				};
-			});
+			} );
 			setCounterPage(getPageId(url));
 			setPrev(res.previous);
 			setNext(res.next);

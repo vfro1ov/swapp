@@ -1,5 +1,6 @@
 import { makeConCorrentRequest } from '@utils/network';
 import { useState, useEffect } from 'react';
+import { toRoman } from '@services/toRoman';
 import './PersonFilms.css';
 
 const PersonFilms = ({ personFilm }) => {
@@ -18,7 +19,8 @@ const PersonFilms = ({ personFilm }) => {
 				.sort((a,z) => a.episode_id - z.episode_id)
 				.map(({ title, episode_id }) => (
 					<li className="list-group-item" key={episode_id}>
-						Episode:{episode_id}:{title}
+						Episode:{toRoman(episode_id)}
+						<p>{title}</p>
 					</li>
 				)) )}
 			</div>

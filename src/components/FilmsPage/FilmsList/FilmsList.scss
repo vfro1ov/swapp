@@ -1,0 +1,24 @@
+.films{
+	width: 1200px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+}
+.film-card {
+	margin: 0;
+	width: 400px;
+	padding: 20px;
+	margin:20px;
+	color: yellow;
+
+	background-color: #080808;
+	p {
+		width: 400px;
+	color:rgb(6, 167, 0);
+	padding: 20px;
+	margin-right: 20px;
+	}
+	p:hover {
+		color: aqua;
+	}
+}

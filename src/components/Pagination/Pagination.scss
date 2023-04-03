@@ -1,25 +1,50 @@
 $button-bg-1: #541388;
+$button-bg-3: #104547;
+// @import '@styles/_variables.scss';
 
+// $button-bg-1: $green;
+.page-link {
+	margin: 16px;
+	background-color: #541388;
+}
+
+button {
+	height: 40px;
+	// color:#541388;
+	color:#fd7e14;
+	&:nth-child(1) {
+		background-color: $button-bg-1;
+	}
+}
+button :disabled {
+	color:red;
+	background-color: $button-bg-3;
+}
+
+.page-item {
+
+}
+.pagination {
+	width: 198px;
+}
 .pagination_wrapper{
-	width: 100px;
+	width: 200px;
 	margin:auto;
 }
-.button-effect {
-	padding: 30px 0; 
-	margin-left: 40px;
+.page-item {
+	width: 200px;
+} 
+// .button-effect {
+// 	padding: 30px 0; 
+// 	margin-left: 40px;
+// 	width: 100px;
 	
-	h2 {
-		font: {
-			family: 'Droid Serif', serif;
-			size: 20px;
-		}
-		margin-bottom: 40px;
-	}
+// 	h2 {
+// 		font: {
+// 			family: 'Droid Serif', serif;
+// 			size: 20px;
+// 		}
+// 		margin-bottom: 40px;
+// 	}
 	
-	a {
-		margin-right: 17px;
-		
-		&:nth-child(1) {
-			background-color: $button-bg-1;
-		}
-	}}
+// 	}
