@@ -11,7 +11,7 @@ const SpeciesList = ({ species }) => {
 		<div className="card-body">
 			<h5 className="card-title">{name}</h5>
 			<p className="card-text">{language}</p>
-		<div className='button-effect'><Link to={`/`} className="effect effect-5">
+		<div className='button-effect'><Link to={`/species/${id}`} className="effect effect-5">
 		About
 	</Link>
 	</div>

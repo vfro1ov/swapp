@@ -1,10 +1,11 @@
 import PeoplePage from '@containers/PeoplePage';
 import SpeciesPage from '@containers/SpeciesPage';
+import SpecPage from '@containers/SpecPage';
 import SearchPage from '@containers/SearchPage';
 import NotFoundPage from '@containers/NotFoundPage';
 import HomePage from '@containers/HomePage';
 import FilmPage from '@containers/FilmPage';
-import PersonPage from '../containers/PersonPage/PersonPage';
+import PersonPage from '@containers/PersonPage/PersonPage';
 
 export const routerConfig = [
 	{
@@ -26,6 +27,10 @@ export const routerConfig = [
 	{
 		path: '/species',
 		element: <SpeciesPage />,
+	},
+	{
+		path: '/species/:id',
+		element: <SpecPage />,
 	},
 	{
 		path: '/films',
