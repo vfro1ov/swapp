@@ -1,13 +1,10 @@
 $button-bg-1: #541388;
 $button-bg-3: #104547;
-// @import '@styles/_variables.scss';
 
-// $button-bg-1: $green;
 .page-link {
 	margin: 16px;
 	background-color: #541388;
 }
-
 button {
 	height: 40px;
 	// color:#541388;
@@ -20,10 +17,6 @@ button :disabled {
 	color:red;
 	background-color: $button-bg-3;
 }
-
-.page-item {
-
-}
 .pagination {
 	width: 198px;
 }
@@ -34,17 +27,3 @@ button :disabled {
 .page-item {
 	width: 200px;
 } 
-// .button-effect {
-// 	padding: 30px 0; 
-// 	margin-left: 40px;
-// 	width: 100px;
-	
-// 	h2 {
-// 		font: {
-// 			family: 'Droid Serif', serif;
-// 			size: 20px;
-// 		}
-// 		margin-bottom: 40px;
-// 	}
-	
-// 	}

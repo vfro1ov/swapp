@@ -6,6 +6,7 @@ import NotFoundPage from '@containers/NotFoundPage';
 import HomePage from '@containers/HomePage';
 import FilmPage from '@containers/FilmPage';
 import PersonPage from '@containers/PersonPage/PersonPage';
+import Favorites from '@containers/Favorites';
 
 export const routerConfig = [
 	{
@@ -35,6 +36,10 @@ export const routerConfig = [
 	{
 		path: '/films',
 		element: <FilmPage />,
+	},
+	{
+		path: '/favorites',
+		element: <Favorites />,
 	},
 	{
 		path: '*',
