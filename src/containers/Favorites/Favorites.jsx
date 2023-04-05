@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import FavoritesPeople from '@components/Favorites/FavoritesPeople'
 
 import './Favorites.css';
 
@@ -7,7 +8,7 @@ const Favorites = () => {
 	console.log(storeData)
 	return (
 		<>
-		<h1>Fav</h1>
+		{/* <FavoritesPeople storeData={storeData} /> */}
 		</>
 	);
 }
