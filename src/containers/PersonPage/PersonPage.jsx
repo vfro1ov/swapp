@@ -48,7 +48,9 @@ const PersonPage = () => {
 					<h5 className="card-title person_name">{personName}</h5>
 					<PersonPhoto personImg={personImg} personId={personId} personName={personName} personFavorites={personFavorites} setPersonFavorites={setPersonFavorites}/>
 					<div className="col-md-8">
+						
 						<div className="card-body person_info">
+							
 							{personInfo && (
 								<ul>
 									<PersonInfo personInfo={personInfo} />
