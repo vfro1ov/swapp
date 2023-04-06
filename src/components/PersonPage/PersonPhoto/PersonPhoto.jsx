@@ -29,16 +29,17 @@ const PersonPhoto = ({ personImg, personId, personName, personFavorites, setPers
 		<>
 			<div className="col-md-4 person_img">
 				<img src={personImg} alt="img" />
-				</div>
-<div className='icon'>
-		<img 
+				<img 
 		src={personFavorites ? iconFavoriteFill : iconFavorite} 
 		alt="add favorites" 
 		onClick={dispatchFavoritePeople}
 		className='icon_favorite'
 		/>
+				</div>
+{/* <div className='icon'>
+	
 
-			</div>
+			</div> */}
 		</>
 	);
 };

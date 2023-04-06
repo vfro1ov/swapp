@@ -1,8 +1,9 @@
 .icon_favorite {
+	position: absolute;
+	top: 30px;
+	left: 80px;
 	width: 35px;
 	height: 35px;
-}
-
-.icon {
 	width: 35px;
+	filter: drop-shadow(0px 0px 0px rgb(0,0,0) );
 }

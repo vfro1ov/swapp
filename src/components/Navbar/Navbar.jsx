@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import FavoritesNav from '@components/Favorites/FavoritesNav'
 
 import './Navbar.css';
 
@@ -40,17 +41,14 @@ const Navbar = () => {
 									Films
 								</NavLink>
 							</li>
-							<li className="nav-item">
-								<NavLink className="nav-link" to="/favorites">
-									Favorites
-								</NavLink>
-							</li>
+						
 							<li className="nav-item">
 								<NavLink className="nav-link" to="/search">
 									Search
 								</NavLink>
 							</li>
 						</ul>
+						<FavoritesNav />
 					</div>
 				</div>
 			</nav>
