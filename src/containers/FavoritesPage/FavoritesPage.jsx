@@ -1,9 +1,9 @@
 import { useSelector } from 'react-redux';
 import PeopleList from '@components/PeoplePage/PeopleList';
-import './Favorites.css';
+import './FavoritesPage.css';
 import { useEffect, useState } from 'react';
 
-const Favorites = () => {
+const FavoritesPage = () => {
 	const [people, setPeople] = useState([])
 	const storeData = useSelector(state => state.favoritesReducer)
 	
@@ -31,4 +31,4 @@ const Favorites = () => {
 	);
 }
 
-export default Favorites;
+export default FavoritesPage;
