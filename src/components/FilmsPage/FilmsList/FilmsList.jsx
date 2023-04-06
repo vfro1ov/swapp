@@ -8,7 +8,7 @@ const FilmsList = ({ film }) => {
 		<div className="films">
 			{film &&
 				film
-					.sort((a, z) => a.episode_id - z.episode_id)
+					// .sort((a, z) => a.episode_id - z.episode_id)
 					.map(({ title, img, episode_id, opening_crawl }) => (
 						<div className="card film-card">
 							<h3 key={episode_id}>
@@ -16,7 +16,7 @@ const FilmsList = ({ film }) => {
 								{title}
 							</h3>
 							<p>Episode: {toRoman(episode_id)}</p>
-							<p></p>
+							<p>{opening_crawl}</p>
 						</div>
 					))}
 		</div>
