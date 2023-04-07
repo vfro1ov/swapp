@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.fa9b30a3.css",
-    "main.js": "/static/js/main.25c1566a.js",
-    "static/media/babyyoda.gif": "/static/media/babyyoda.632c8285ca9e06c6e667.gif",
-    "static/media/400obi.png": "/static/media/400obi.34f8e8f60c56b5d5738f.png",
-    "static/media/fav-fill.svg": "/static/media/fav-fill.814371fd7610700079eb09a1b764ad5f.svg",
-    "static/media/fav.svg": "/static/media/fav.94c1ec75dfd64707fc31b57c4d727cb2.svg",
-    "static/media/mark.svg": "/static/media/mark.99f7fd3de63057cd17b0495a2ef8bdd4.svg",
-    "index.html": "/index.html",
-    "main.fa9b30a3.css.map": "/static/css/main.fa9b30a3.css.map",
-    "main.25c1566a.js.map": "/static/js/main.25c1566a.js.map"
+    "main.css": "/swapp/static/css/main.166a97b4.css",
+    "main.js": "/swapp/static/js/main.04e1739a.js",
+    "static/media/babyyoda.gif": "/swapp/static/media/babyyoda.632c8285ca9e06c6e667.gif",
+    "static/media/400obi.png": "/swapp/static/media/400obi.34f8e8f60c56b5d5738f.png",
+    "static/media/saber.png": "/swapp/static/media/saber.a966f823939f5cf9a891.png",
+    "static/media/redSaber.png": "/swapp/static/media/redSaber.fa01f39ba335f4ef2108.png",
+    "static/media/fav-fill.svg": "/swapp/static/media/fav-fill.814371fd7610700079eb09a1b764ad5f.svg",
+    "static/media/fav.svg": "/swapp/static/media/fav.94c1ec75dfd64707fc31b57c4d727cb2.svg",
+    "static/media/mark.svg": "/swapp/static/media/mark.99f7fd3de63057cd17b0495a2ef8bdd4.svg",
+    "index.html": "/swapp/index.html",
+    "main.166a97b4.css.map": "/swapp/static/css/main.166a97b4.css.map",
+    "main.04e1739a.js.map": "/swapp/static/js/main.04e1739a.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa9b30a3.css",
-    "static/js/main.25c1566a.js"
+    "static/css/main.166a97b4.css",
+    "static/js/main.04e1739a.js"
   ]
 }
