@@ -7,9 +7,9 @@ const ChangeTheme = () => {
 	return (
 		<div>
 			{isTheme.theme}
-			<button onClick={()=> (isTheme.change(THEME_LIGHT))}>Light</button>
-			<button onClick={()=> (isTheme.change(THEME_DARK))}>Dark</button>
-			<button onClick={()=> (isTheme.change(THEME_SPACE))}>SPACE</button>
+			<button onClick={() => isTheme.change(THEME_LIGHT)}>Light</button>
+			<button onClick={() => isTheme.change(THEME_DARK)}>Dark</button>
+			<button onClick={() => isTheme.change(THEME_SPACE)}>SPACE</button>
 		</div>
 	);
 };
