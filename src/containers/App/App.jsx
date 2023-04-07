@@ -1,13 +1,14 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { routerConfig } from '@routes/routerConfig';
 import Navbar from '@components/Navbar';
+import { REPO_NAME } from '@constants/repo';
 
 import './App.css';
 
 function App() {
 	return (
 		<>
-			<BrowserRouter>
+			<BrowserRouter browsername={`//${REPO_NAME}`}>
 				<Navbar />
 				<Routes>
 					{routerConfig.map((route, index) => (
