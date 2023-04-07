@@ -8,7 +8,7 @@ import './App.css';
 function App() {
 	return (
 		<>
-			<BrowserRouter browsername={`//${REPO_NAME}`}>
+			<BrowserRouter basename={`/${REPO_NAME}/`}>
 				<Navbar />
 				<Routes>
 					{routerConfig.map((route, index) => (
