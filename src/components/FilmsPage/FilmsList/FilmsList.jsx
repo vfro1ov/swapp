@@ -8,7 +8,7 @@ const FilmsList = ({ film }) => {
 		<div className="films">
 			{film &&
 				film
-					// .sort((a, z) => a.episode_id - z.episode_id)
+					.sort((a, z) => a.episode_id - z.episode_id)
 					.map(({ title, img, episode_id, opening_crawl }) => (
 						<div className="card film-card">
 							<h3 key={episode_id}>
