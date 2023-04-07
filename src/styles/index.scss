@@ -1,14 +1,36 @@
-@import 'variables';
-@import 'bootstrap';
+@import '_variables';
+@import '_bootstrap';
 
+:root {
+	//THEMES
+// --theme-dark-bgimg: linear-gradient(to right top, #836577, #915b75, #9f506f, #ac4265, #b83056, #ab274b, #9e1d40, #911335, #6c152d, #491423, #271016, #000000);
+--theme-dark-bgimg: url('https://phonoteka.org/uploads/posts/2022-09/1663794121_27-phonoteka-org-p-sitkhi-oboi-instagram-33.jpg');
+// --theme-space-bgimg:  #000000;
+--theme-space-bgimg:  url('https://img2.akspic.ru/crops/5/4/2/5/6/165245/165245-zvezdnye_vojny-dart_vejder-han_solo-tysyacheletnij_sokol-korabelnaya_arhitektura-3840x2160.jpg');
+// --theme-default-bgimg: #000000;
+--theme-default-bgimg: url('https://phonoteka.org/uploads/posts/2021-05/1621550009_24-phonoteka_org-p-fon-kosmos-zvezdnie-voini-28.jpg');
+--theme-default-header: #e7e407;
+--theme-light-header: #250fa1;
+--theme-dark-header: #750404;
+--theme-space-header: #e7e407;
+--theme-light-bgimg:url('https://img3.akspic.ru/crops/7/0/9/7/5/157907/157907-rej_zvezdnye_vojny-zvezdnye_vojny_poslednij_dzhedaj-korol-dejzi_ridli-zvezdnye_vojny-3840x2160.jpg');
+
+}
 body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	height: 100vh;
-	background-color: $color-primary-black;
-}
+	background-image: var(--theme-default-bgimg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: 100%;
 
+}
+h1,h2,h3 {
+	color: var(--theme-default-header);
+
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

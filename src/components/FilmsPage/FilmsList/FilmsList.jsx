@@ -16,7 +16,7 @@ const FilmsList = ({ film }) => {
 								{title}
 							</h3>
 							<p>Episode: {toRoman(episode_id)}</p>
-							<p></p>
+							<p>{opening_crawl}</p>
 						</div>
 					))}
 		</div>
