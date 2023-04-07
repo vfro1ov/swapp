@@ -29,7 +29,6 @@ $color_background: #2D3235;
 $default_timer: 987ms;
 
 $primary: $indigo;
-$btn-primary-1:$purple-1;
 $link-color:$orange;
 $nav-link-color:$orange;
 
@@ -41,6 +40,15 @@ $btn-color: $yellow;
 $btn-box-shadow: inset 0 1px 0 rgba($orange, 0.15), 0 1px 1px rgba($black, 0.075) !default;
 
 $body-color: $gray-700;
-$color-primary-black: #10100e;
+$body-color-light: $gray-200;
+$body-color-dark: $red;
+$body-color-space: $yellow;
 
-$background-img: 'https://sun9-3.userapi.com/impf/nDu9Mlppytew_phu_LXWnksrzzw6XnkIZ75A1A/e1YZMuQkgxI.jpg?size=630x420&quality=96&sign=8ebbd760f12a2d76d875c7715ad782c6&type=album'
+$color-primary-black: #10100e;
+$background-default-color: #000000;
+
+//THEME
+$background-dark-img: linear-gradient(to right top, #836577, #915b75, #9f506f, #ac4265, #b83056, #ab274b, #9e1d40, #911335, #6c152d, #491423, #271016, #000000);
+$background-space-img: linear-gradient(to right top, #d4e09a, #fedbaa, #ffdbca, #ffe4ea, #fff0fb, #e5dee6, #ceccd0, #b9b9b9, #878787, #585858, #2e2e2e, #000000);
+$background-default-img: #000000;
+$background-light-img:#f3d8ef;
