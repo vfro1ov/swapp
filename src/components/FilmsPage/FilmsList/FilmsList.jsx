@@ -12,7 +12,7 @@ const FilmsList = ({ film }) => {
 					.map(({ title, img, episode_id, opening_crawl }) => (
 						<div className="card film-card">
 							<h3 key={episode_id}>
-								{/* <img src={img} alt='.' /> */}
+								<img src={img} alt='.' />
 								{title}
 							</h3>
 							<p>Episode: {toRoman(episode_id)}</p>

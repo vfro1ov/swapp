@@ -7,3 +7,12 @@ const id = url
 
 return id;
 }
+
+
+export const getFilm = (url,category) => {
+	const id = url
+	.replace(HTTPS+SWAPI_BASE + category,'')
+	.replace(/\//i, '');
+	
+	return String(id);
+}
